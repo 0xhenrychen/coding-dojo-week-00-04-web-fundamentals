@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container
+        {
+            text-align: center;
+        }
+
+        .button
+        {
+            border: 2px solid black;
+            width: 200px;
+            height: 150px;
+            margin: 20px;
+        }
+
+        @media only screen and (max-width: 480px)
+        {
+            .button
+            {
+                background-color: yellow;
+                
+                
+            }
+        }
+
+        @media only screen and (min-width: 481px)
+        {
+            .button
+            {
+                background-color: blue;
+            }
+        }
+
+        @media only screen and (min-width: 1024px)
+        {
+            .button
+            {
+                background-color: red;
+            }
+        }
+    </style>
+    <title>Media Queries</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_sub">
+            <button class="button">Button 1</button>
+            <button class="button">Button 2</button>
+        </div>
+        <div class="container_sub">
+            <button class="button">Button 3</button>
+            <button class="button">Button 4</button>
+        </div>
+    </div>
+</body>
+</html>

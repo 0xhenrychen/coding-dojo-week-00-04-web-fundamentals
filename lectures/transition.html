@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img
+        {
+            transition: 500ms;
+        }
+    </style>
+    <title>Transition</title>
+</head>
+<body>
+    <img src="/Users/henrychen/Desktop/coding-dojo-local/week-01-04-web-fundamentals/javascript/media/ninja.png" alt="ninja" onmouseover="scale(this, 1.5)" onmouseleave="scale(this, 1)">
+<script>
+    function scale(element, value)
+    {
+        element.style.transform = "scale(" + value + ")";
+    }
+</script>
+</body>
+</html>

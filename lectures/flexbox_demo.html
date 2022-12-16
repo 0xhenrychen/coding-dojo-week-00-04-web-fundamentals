@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            border: 2px solid red;
+            max-width: 1270px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid black;
+        }
+        
+        .nav-title {
+            display: flex;
+            align-items: center;
+            width: 50%;
+        }
+        
+        .nav-links {
+            width: 25%;
+        }
+        
+        .nav-links ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .main {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .left, .right {
+            border: 2px solid green;
+            height: 500px;
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .left {
+            width: 600px;
+        
+        }
+        
+        .right {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-title">
+                <h1>Flexbox Demo!</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left"><h2>Main Content</h2></div>
+            <div class="right"><h2>Side Content</h2></div>
+        </div>
+    </div>
+</body>
+</html>

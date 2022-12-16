@@ -1,0 +1,52 @@
+<html>
+<body>
+	<div id='background'>
+        <div id='character' style='position:absolute; top:100px; left:450px; background-image: url("img/down1.png"); width:59px; height:86px;'></div>
+    </div>
+    <script type="text/javascript">
+
+		var leftValue = 450;
+		var upValue = 100;
+		var direction = 'down';
+
+		function update()
+		{
+			document.getElementById("character").style.left = leftValue + "px";
+			document.getElementById("character").style.top = upValue + "px";
+			document.getElementById("character").style.backgroundImage = "url('img/"+ direction + "1.png')";
+		}
+
+		document.onkeydown = function(e)
+		{
+			console.log(e);
+		
+			if(e.keyCode == 37 && leftValue > 0) // Left
+			{
+				leftValue = leftValue - 10;
+				direction = 'left';
+			}
+
+			if(e.keyCode == 38 && upValue > 0) // Up
+			{
+				upValue = upValue - 10;
+				direction = "top";
+			}
+
+			else if(e.keyCode == 39 && leftValue < 500) // Right
+			{	
+				leftValue = leftValue + 10;
+				direction = 'right';
+			}
+			
+			else if(e.keyCode == 40 && upValue < 500) // Down
+			{
+				upValue = upValue + 10;
+				direction = 'down';
+			}
+
+			update();
+
+		}
+    </script>
+</body>
+</html>
